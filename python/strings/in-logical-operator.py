@@ -1,7 +1,7 @@
 name = "Ian"
 
 verify = "I" in name
-print(verify)
+print(verify) # True
 
 if "a" in name:
     print("Found it!")
