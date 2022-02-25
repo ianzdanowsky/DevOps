@@ -4,3 +4,5 @@ nameUpper = nameLower.upper()
 print(nameUpper)
 
 print('Hi There'.lower())
+
+print(dir(nameLower))
