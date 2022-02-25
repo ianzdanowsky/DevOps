@@ -1,7 +1,7 @@
 count = 0
 
 function increment(){
-    count = count + 2
+    count += 1
     document.getElementById("count-el").innerHTML = count
 }
 
@@ -15,4 +15,4 @@ name = "Ian Zdanowsky"
 greetings = "Welcome back, "
 
 welcomeEl.innerHTML = greetings + name
-
+welcomeEl.innerHTML += "!"
