@@ -1,18 +1,32 @@
-count = 0
+let count = 0
+let saveEl = document.getElementById("save-el")
+let welcomeEl = document.getElementById("welcome-el")
+let countEl = document.getElementById("count-el")
+
+
 
 function increment(){
     count += 1
-    document.getElementById("count-el").innerHTML = count
+    countEl.innerHTML = count
 }
+
+
+// Save last entries
 
 function save(){
-    console.log(count)
+    let lastCount = count + " - "
+    saveEl.innerHTML += lastCount
 }
 
+// Add welcoming greet
 
-welcomeEl = document.getElementById("welcome-el")
 name = "Ian Zdanowsky"
 greetings = "Welcome back, "
 
 welcomeEl.innerHTML = greetings + name
 welcomeEl.innerHTML += "!"
+
+//
+
+
+
