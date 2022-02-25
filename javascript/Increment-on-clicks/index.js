@@ -12,6 +12,6 @@
 count = 0
 
 function increment(){
-    count = count + 1
+    count = count + 2
     document.getElementById("count-el").innerHTML = count
 }
