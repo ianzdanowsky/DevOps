@@ -22,8 +22,8 @@ function save(){
 
 // Add welcoming greet
 
-name = "Ian Zdanowsky"
-greetings = "Welcome back, "
+let name = "Ian Zdanowsky"
+let greetings = "Welcome back, "
 
 welcomeEl.innerHTML = greetings + name
 welcomeEl.innerHTML += "!"
