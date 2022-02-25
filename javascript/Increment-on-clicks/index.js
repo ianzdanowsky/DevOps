@@ -8,3 +8,11 @@ function increment(){
 function save(){
     console.log(count)
 }
+
+
+welcomeEl = document.getElementById("welcome-el")
+name = "Ian Zdanowsky"
+greetings = "Welcome back, "
+
+welcomeEl.innerHTML = greetings + name
+
