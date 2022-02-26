@@ -1,6 +1,12 @@
 docName = input('Olá, digite o nome do arquivo:\n ')
 
-fhand = open(docName)
+try:
+    fhand = open(docName)
+except:
+    print('File cannot been opened {0}'.format(docName))
+    quit()
+
+
 count = 0
 
 for lines in fhand:
