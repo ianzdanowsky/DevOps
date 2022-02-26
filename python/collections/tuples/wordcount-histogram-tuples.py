@@ -17,3 +17,10 @@ tupleLists = sorted(tupleLists, reverse=True)        # Sorts the lists of tuples
 
 for val, key in tupleLists[:10]:        # Loops through the first (biggest) key value pairs in the list of tuples
     print(val, key)      
+
+
+# Simpler version
+
+myDict2 = {'a':10, 'c':50, 'b':100}
+
+print(sorted([(v, k) for k,v in myDict2.items()],reverse=True))     # Loop for the key value pairs in the myDict2 dictionary and stores in the modified tuple (v, k). Sorts in reverse and print it out.
