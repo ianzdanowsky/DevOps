@@ -1,3 +1,10 @@
+# class -> a template
+# attribute -> a variable within a class
+# method -> a function within a class
+# object -> a particular instance of a class
+# constructor -> code that runs when the object is created
+# inheritance -> the ability to extend a class to make a new one
+
 
 # Contructs the class parameteres
 
@@ -5,7 +12,7 @@ class PartyAnimal:
     x = 0
 
 
-    def __init__(self):
+    def __init__(self):         #__init__ is a function called automatically when the object is build
         print('I am constructed, thanks')
 
 
