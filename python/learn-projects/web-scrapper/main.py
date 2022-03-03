@@ -2,6 +2,11 @@ import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 from google.cloud import bigquery
 
+# # Construct a BigQuery client object and store the table adress
+
+client = bigquery.Client()
+table_id = "active-cosine-317912.webscrapperlinks.webscrapperlinks-tables"
+
 
 # url = str(input('Insira a URL manualmente')).split()
 
@@ -18,23 +23,15 @@ for lines in url:
     for link in soup.find_all('a'):
         linkLines = str(link.get('href'))
         if linkLines.startswith('http'):
-            print(lines, linkLines)
+            # print(lines, linkLines)
 
+            rows_to_insert = [
+                {u"link_fonte": lines, u"link_scrapper": linkLines},
+            ]
 
+            errors = client.insert_rows_json(table_id, rows_to_insert)  # Make an API request.
 
-# # Construct a BigQuery client object.
-# client = bigquery.Client()
-
-# table_id = "your-project.your_dataset.your_table"
-
-# rows_to_insert = [
-#     {u"full_name": u"Phred Phlyntstone", u"age": 32},
-#     {u"full_name": u"Wylma Phlyntstone", u"age": 29},
-# ]
-
-# errors = client.insert_rows_json(table_id, rows_to_insert)  # Make an API request.
-
-# if errors == []:
-#     print("New rows have been added.")
-# else:
-#     print("Encountered errors while inserting rows: {}".format(errors))
+            if errors == []:
+                print("New rows have been added.")
+            else:
+                print("Encountered errors while inserting rows: {}".format(errors))
