@@ -91,4 +91,4 @@ def add_time(start, duration, *args):
 #print(add_time("8:16 PM", "466:02", "tuesday"))
 #print(add_time("2:59 AM", "24:00", "saturDay"))
 
-#print(add_time("3:30 PM", "2:12", "Monday"))
+print(add_time("3:30 PM", "2:12", "Monday"))
