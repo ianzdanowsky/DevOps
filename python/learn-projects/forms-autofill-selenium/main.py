@@ -1,3 +1,5 @@
+from operator import mul
+from random import random
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -24,5 +26,8 @@ multiple_choice = myDriver.find_elements_by_class_name("docssharedWizToggleLabel
 
 i = 0
 for choice in multiple_choice:
-    multiple_choice[i].click()
+    # random(range(multiple_choice[i],multiple_choice[i+4]))
+    # multiple_choice[i].click()
+    randomIndex = random(range(i,i+4))
+    multiple_choice[randomIndex].click()
     i += 4
