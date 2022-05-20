@@ -1,0 +1,4 @@
+num = 6
+
+if num in range(6,10):
+    print("I am")
