@@ -1,3 +1,3 @@
-import shutil
+#import shutil
 
-shutil.move('file.txt', 'new_path') # Move files and directories
+#shutil.move('file.txt', 'new_path') # Move files and directories
