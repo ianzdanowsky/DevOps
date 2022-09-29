@@ -1,0 +1,12 @@
+{% extends 'teste/base.html' %}
+
+{% block content %}
+<p>Hey here is your list's name:</p>
+<p><h1>{{ls.name}}</h1></p>
+<p>The items of that list:</p>
+<ul>
+    {% for item in ls.item_set.all %}
+        <li>{{item.text}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
