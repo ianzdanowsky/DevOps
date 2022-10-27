@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-26T22:34:49.745Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="h3rvFQhaR9o06GeoRGHM" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-27T09:05:14.692Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="9ffjHsHhxcjaFyttiaNz" version="20.5.1" type="github">
   <diagram id="252d-Q3R2h-Utwpklu9Z" name="Página-1">
     <mxGraphModel dx="3022" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="2500" math="0" shadow="0">
       <root>
@@ -145,9 +145,6 @@
         </mxCell>
         <mxCell id="PvoFfEaVU1l2XFvJNkB2-44" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;16 CPU - 64 GB RAM - 1 TB SSD&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-1265" y="791.25" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="PvoFfEaVU1l2XFvJNkB2-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=24;startArrow=none;startFill=0;" parent="1" source="PvoFfEaVU1l2XFvJNkB2-45" target="PvoFfEaVU1l2XFvJNkB2-43" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PvoFfEaVU1l2XFvJNkB2-45" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;16 CPU - 64 GB RAM - 1 TB SSD&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-1265" y="680" width="180" height="30" as="geometry" />
